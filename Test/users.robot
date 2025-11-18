@@ -2,10 +2,12 @@
 Resource    ../Resource/users.resource
 
 *** Test Cases ***
-Verify user able to get users list from page 1 and page 2
+Verify user able to get users list from page 1
     user hit users list in page    1
     status code should be    200
     user data not empty
+
+Verify user able to get users list from page 2
     user hit users list in page    2
     status code should be    200
     user data not empty
